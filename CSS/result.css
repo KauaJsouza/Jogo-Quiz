@@ -1,0 +1,40 @@
+/* CSS simplificado para a página de resultados */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    height: 100vh;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contadorAcertos, #contadorErros {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

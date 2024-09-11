@@ -1,0 +1,150 @@
+/* CSS para estilizar o quiz */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #04b0ff, #000000);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+#containerQuiz {
+    width: 85%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+#containerQuiz::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top left, rgba(0, 123, 255, 0.15), rgba(0, 123, 255, 0.05));
+    border-radius: 20px;
+    z-index: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #2600ff;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    z-index: 1;
+    position: relative;
+}
+
+.pergunta {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 1;
+    transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+}
+
+.pergunta:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    background-color: #ffffff;
+}
+
+.pergunta h3 {
+    font-size: 1.25em;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.options {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.options li {
+    padding: 15px;
+    border: 1px solid #d1d1d1;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.options li.selected {
+    background-color: #007bff;
+    color: #ffffff;
+    transform: scale(1.03);
+}
+
+.options li:hover {
+    background-color: #00e1ff;
+}
+
+.options li:active {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    color: #ffffff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+button:hover {
+    background-color: #218838;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    #containerQuiz {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .pergunta h3 {
+        font-size: 1.1em;
+    }
+
+    button {
+        font-size: 1.1em;
+        padding: 12px;
+    }
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Perguntas e Respostas</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    
+    <div id="containerQuiz">
+        <h1>Quiz de Perguntas e Respostas do Kauã</h1>
+
+        <form id="quizForm">
+            <!-- Pergunta 1 -->
+            <div class="pergunta" data-question="0">
+                <h3>1. Quando que o Brasil se tornou independente?</h3>
+                <ul class="options">
+                    <li data-value="0">2000</li>
+                    <li data-value="1">1814</li>
+                    <li data-value="2">1822</li>
+                    <li data-value="3">1926</li>
+                </ul>
+            </div>
+
+            <!-- Pergunta 2 -->
+            <div class="pergunta" data-question="1">
+                <h3>2. Qual é considerado o Novo Mundo?</h3>
+                <ul class="options">
+                    <li data-value="0">Brasil</li>
+                    <li data-value="1">Oceania</li>
+                    <li data-value="2">América do Sul</li>
+                    <li data-value="3">América</li>
+                </ul>
+            </div>
+
+            <!-- Pergunta 3 -->
+            <div class="pergunta" data-question="2">
+                <h3>3. Para Marx, a produção de mais-valia é modo de produção capitalista. A partir dela, o trabalhador é explorado e o lucro é obtido.</h3>
+                <p>De acordo com o conceito de mais-valia desenvolvido por Marx, é incorreto dizer que:</p>
+                <ul class="options">
+                    <li data-value="0">Parte do valor produzido pelo trabalhador é apropriado pelo capitalista sem que lhe seja pago o equivalente.</li>
+                    <li data-value="1">O trabalhador é forçado a produzir cada vez mais pelo mesmo preço, firmado em contrato.</li>
+                    <li data-value="2">O valor do salário sempre será inferior ao valor produzido.</li>
+                    <li data-value="3">Os salários são equivalentes ao valor produzido pelo trabalhador.</li>
+                </ul>
+            </div>
+
+            <!-- Pergunta 4 -->
+            <div class="pergunta" data-question="3">
+                <h3>4. O professor de Juninho estava explicando para seus alunos o que é o reflexo. Qual o melhor exemplo que o professor de Juninho poderia usar:</h3>
+                <ul class="options">
+                    <li data-value="0">Um espirro de uma pessoa.</li>
+                    <li data-value="1">Um aluno acertando o dedo em uma ferpa e recuando.</li>
+                    <li data-value="2">Um aluno bebendo água de forma habilidosa.</li>
+                    <li data-value="3">Um professor escrevendo no quadro com giz.</li>
+                </ul>
+            </div>
+
+            <!-- Pergunta 5 -->
+            <div class="pergunta" data-question="4">
+                <h3>5. Se a incrível Copa do Mundo foi sediada pelo Uruguai em 13 de julho de 1930, em que ano aconteceu a décima sexta Copa do Mundo?</h3>
+                <ul class="options">
+                    <li data-value="0">Em 2010 com o Senegal ganhando sua primeira Copa do Mundo.</li>
+                    <li data-value="1">Em 1988 com a França sendo a ganhadora.</li>
+                    <li data-value="2">Em 1990 com a Alemanha sendo a ganhadora de forma humilhante de 3x0 em cima da Argentina.</li>
+                    <li data-value="3">Em 1994 com o Brasil sendo o ganhador e conquistando o seu Tetra.</li>
+                </ul>
+            </div>
+
+            <!-- Pergunta 6 -->
+            <div class="pergunta" data-question="5">
+                <h3>6. Quantos parafusos por telha 244x110?</h3>
+                <ul class="options">
+                    <li data-value="0">12 peças.</li>
+                    <li data-value="1">15 peças.</li>
+                    <li data-value="2">85 peças.</li>
+                    <li data-value="3">200 peças.</li>
+                </ul>
+            </div>
+
+            <!-- Pergunta 7 -->
+            <div class="pergunta" data-question="6">
+                <h3>7. Quantos minutos demora para a luz do sol atingir Saturno?</h3>
+                <ul class="options">
+                    <li data-value="0">6 minutos.</li>
+                    <li data-value="1">39 minutos e 15 segundos.</li>
+                    <li data-value="2">1h e 21 minutos.</li>
+                    <li data-value="3">1h e 37 minutos e 10 segundos.</li>
+                </ul>
+            </div>
+
+            <!-- Pergunta 8 -->
+            <div class="pergunta" data-question="7">
+                <h3>8. O que a sogra do namorado da minha sobrinha é minha?</h3>
+                <ul class="options">
+                    <li data-value="0">Tia.</li>
+                    <li data-value="1">Sobrinha.</li>
+                    <li data-value="2">Irmã.</li>
+                    <li data-value="3">Nada.</li>
+                </ul>
+            </div>
+
+            <!-- Pergunta 9 -->
+            <div class="pergunta" data-question="8">
+                <h3>9. Quantas horas tem um dia completo?</h3>
+                <ul class="options">
+                    <li data-value="0">24 horas.</li>
+                    <li data-value="1">23 horas.</li>
+                    <li data-value="2">23 horas, 56 minutos e 4 segundos.</li>
+                    <li data-value="3">24 horas, 2 minutos e 3 segundos.</li>
+                </ul>
+            </div>
+
+            <!-- Pergunta 10 -->
+            <div class="pergunta" data-question="9">
+                <h3>10. Quantos esportes tem nas Paralimpíadas de 2024?</h3>
+                <ul class="options">
+                    <li data-value="0">20 modalidades.</li>
+                    <li data-value="1">10 modalidades.</li>
+                    <li data-value="2">36 modalidades.</li>
+                    <li data-value="3">22 modalidades.</li>
+                </ul>
+            </div>
+
+            <button type="button" onclick="verificarRespostas()">Enviar Respostas</button>
+        </form>
+    </div>
+
+    <script src="./JavaScript/script.js"></script>
+</body>
+</html>
